@@ -9,12 +9,12 @@ from kucoin.client import Client as KuCoinClient
 app = Flask(__name__)
 
 # Initialize Binance and KuCoin clients with your API keys
-binance_api_key = 'YOUR_BINANCE_API_KEY'
-binance_api_secret = 'YOUR_BINANCE_API_SECRET'
+binance_api_key = 'vpKO1DecEFexXzX5gsfG8WEmHuH5DPeV4lYqFKBJGwmjeVoWwXMZjU4UFcqQFaba'
+binance_api_secret = 'mnpTkA1KNYiDBpoUsiUjQGY3KUtPOxJHcad0aFVbvSF8h5imxhAaAcriP99oiMIi'
 binance_client = BinanceClient(binance_api_key, binance_api_secret)
 
-kucoin_api_key = 'YOUR_KUCOIN_API_KEY'
-kucoin_api_secret = 'YOUR_KUCOIN_API_SECRET'
+kucoin_api_key = '63ed2ee00dd907000148bf01'
+kucoin_api_secret = 'a719e24b-c28a-4355-b838-71f133c8e328'
 kucoin_client = KuCoinClient(kucoin_api_key, kucoin_api_secret)
 
 # Define the trading pairs to scan for arbitrage opportunities
