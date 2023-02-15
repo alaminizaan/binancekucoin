@@ -1,4 +1,3 @@
-print("app.py imported successfully")
 
 from flask import Flask, render_template
 import time
@@ -36,7 +35,6 @@ kucoin_taker_fee = 0.001
 def home():
     return render_template("home.html")
 
-@app.route("/arbitrage")
 def arbitrage():
     try:
         # Get the latest market prices and volume on both exchanges
