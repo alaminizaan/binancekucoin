@@ -1,3 +1,5 @@
+print("app.py imported successfully")
+
 from flask import Flask, render_template
 import time
 import json
