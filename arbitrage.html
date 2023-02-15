@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arbitrage Scanner - Results</title>
+  </head>
+  <body>
+    <h1>Arbitrage Scanner Results</h1>
+    <p>
+      The following arbitrage opportunities were found:
+    </p>
+    <table>
+      <tr>
+        <th>Buy Exchange</th>
+        <th>Sell Exchange</th>
+        <th>Symbol</th>
+        <th>Buy Price</th>
+        <th>Sell Price</th>
+        <th>Profit</th>
+        <th>Profit Percentage</th>
+      </tr>
+      {% for result in results %}
+      <tr>
+        <td>{{ result.buy_exchange }}</td>
+        <td>{{ result.sell_exchange }}</td>
+        <td>{{ result.symbol }}</td>
+        <td>{{ result.buy_price }}</td>
+        <td>{{ result.sell_price }}</td>
+        <td>{{ result.profit }}</td>
+        <td>{{ result.profit_percent }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <form method="post" action="{{ url_for('home') }}">
+      <button type="submit">Back to Home</button>
+    </form>
+  </body>
+</html>
