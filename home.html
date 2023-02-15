@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arbitrage Scanner - Home</title>
+  </head>
+  <body>
+    <h1>Welcome to the Arbitrage Scanner</h1>
+    <p>
+      This tool scans the Binance and KuCoin exchanges for arbitrage opportunities and displays the results on this page. To get started, click the "Scan Now" button below.
+    </p>
+    <form method="post" action="{{ url_for('arbitrage') }}">
+      <button type="submit">Scan Now</button>
+    </form>
+  </body>
+</html>
